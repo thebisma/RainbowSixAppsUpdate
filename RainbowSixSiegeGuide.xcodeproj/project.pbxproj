@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24C463EF480398B5245CDE2F /* Pods_RainbowSixSiegeGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD21A4CF87CFE280A369AC8 /* Pods_RainbowSixSiegeGuide.framework */; };
+		4E014A151ED341BD00CB9197 /* MapsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E014A141ED341BD00CB9197 /* MapsTableViewController.swift */; };
+		4E014A211ED3508E00CB9197 /* FormMapsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E014A201ED3508E00CB9197 /* FormMapsTableViewCell.swift */; };
+		4E9AF1001EDAFBB40008F387 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9AF0FF1EDAFBB40008F387 /* PopUpViewController.swift */; };
+		4EABBE50200EF7F8006CF1A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A14867A1EB4505A00AA5F0B /* ViewController.swift */; };
+		4EABBE51200EF7FA006CF1A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A14867A1EB4505A00AA5F0B /* ViewController.swift */; };
+		4EC30E251EE033D20017F1B3 /* MapdetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC30E241EE033D20017F1B3 /* MapdetailViewController.swift */; };
+		4EC30E2B1EE04DD30017F1B3 /* OperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC30E2A1EE04DD30017F1B3 /* OperatorViewController.swift */; };
+		4EC30E311EE070880017F1B3 /* OPTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC30E301EE070880017F1B3 /* OPTableViewCell.swift */; };
+		4ED94ACF200E3CEC00D683D3 /* button-19.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4ED94ACE200E3CEC00D683D3 /* button-19.mp3 */; };
+		4EE7493C1EBDFFF9001F214C /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7493B1EBDFFF9001F214C /* Cell.swift */; };
+		4EE91BB01EEAD3470062EDDF /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE91BAF1EEAD3470062EDDF /* ReminderViewController.swift */; };
+		4EE91BB41EEAEABE0062EDDF /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE91BB31EEAEABE0062EDDF /* AddViewController.swift */; };
+		4EF3E4E1200ED436001E6F40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EF3E4E0200ED436001E6F40 /* GoogleService-Info.plist */; };
+		4EF3E4E2200ED436001E6F40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EF3E4E0200ED436001E6F40 /* GoogleService-Info.plist */; };
+		4EF3E4E3200ED436001E6F40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EF3E4E0200ED436001E6F40 /* GoogleService-Info.plist */; };
+		6A1486791EB4505A00AA5F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1486781EB4505A00AA5F0B /* AppDelegate.swift */; };
+		6A14867B1EB4505A00AA5F0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A14867A1EB4505A00AA5F0B /* ViewController.swift */; };
+		6A14867E1EB4505A00AA5F0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A14867C1EB4505A00AA5F0B /* Main.storyboard */; };
+		6A1486801EB4505A00AA5F0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A14867F1EB4505A00AA5F0B /* Assets.xcassets */; };
+		6A1486831EB4505A00AA5F0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A1486811EB4505A00AA5F0B /* LaunchScreen.storyboard */; };
+		6A14868E1EB4505A00AA5F0B /* RainbowSixSiegeGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A14868D1EB4505A00AA5F0B /* RainbowSixSiegeGuideTests.swift */; };
+		6A1486991EB4505A00AA5F0B /* RainbowSixSiegeGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1486981EB4505A00AA5F0B /* RainbowSixSiegeGuideUITests.swift */; };
+		6A1486AA1EB451D700AA5F0B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1486A61EB451D700AA5F0B /* Bolts.framework */; };
+		6A1486AB1EB451D700AA5F0B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1486A71EB451D700AA5F0B /* FBSDKCoreKit.framework */; };
+		6A1486AC1EB451D700AA5F0B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1486A81EB451D700AA5F0B /* FBSDKLoginKit.framework */; };
+		6A1486AD1EB451D700AA5F0B /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1486A91EB451D700AA5F0B /* FBSDKShareKit.framework */; };
+		6A1486B11EB45F4600AA5F0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1486B01EB45F4600AA5F0B /* ViewController.m */; };
+		6A6BC39C1EBD742C00ED0D32 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6BC39B1EBD742C00ED0D32 /* DisplayViewController.swift */; };
+		6AF54F3F1EC6B7AE00EB4AD5 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF54F3E1EC6B7AE00EB4AD5 /* WebviewViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A14868A1EB4505A00AA5F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A14866D1EB4505A00AA5F0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A1486741EB4505A00AA5F0B;
+			remoteInfo = RainbowSixSiegeGuide;
+		};
+		6A1486951EB4505A00AA5F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A14866D1EB4505A00AA5F0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A1486741EB4505A00AA5F0B;
+			remoteInfo = RainbowSixSiegeGuide;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E014A141ED341BD00CB9197 /* MapsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsTableViewController.swift; sourceTree = "<group>"; };
+		4E014A201ED3508E00CB9197 /* FormMapsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormMapsTableViewCell.swift; path = ../FormMapsTableViewCell.swift; sourceTree = "<group>"; };
+		4E9AF0FF1EDAFBB40008F387 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		4EC30E241EE033D20017F1B3 /* MapdetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapdetailViewController.swift; sourceTree = "<group>"; };
+		4EC30E2A1EE04DD30017F1B3 /* OperatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
+		4EC30E301EE070880017F1B3 /* OPTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPTableViewCell.swift; sourceTree = "<group>"; };
+		4ED94ACE200E3CEC00D683D3 /* button-19.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "button-19.mp3"; sourceTree = "<group>"; };
+		4EE7493B1EBDFFF9001F214C /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		4EE91BAF1EEAD3470062EDDF /* ReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		4EE91BB31EEAEABE0062EDDF /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		4EF3E4E0200ED436001E6F40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6A1486751EB4505A00AA5F0B /* RainbowSixSiegeGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainbowSixSiegeGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A1486781EB4505A00AA5F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A14867A1EB4505A00AA5F0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A14867D1EB4505A00AA5F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A14867F1EB4505A00AA5F0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A1486821EB4505A00AA5F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A1486841EB4505A00AA5F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A1486891EB4505A00AA5F0B /* RainbowSixSiegeGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainbowSixSiegeGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A14868D1EB4505A00AA5F0B /* RainbowSixSiegeGuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowSixSiegeGuideTests.swift; sourceTree = "<group>"; };
+		6A14868F1EB4505A00AA5F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A1486941EB4505A00AA5F0B /* RainbowSixSiegeGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainbowSixSiegeGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A1486981EB4505A00AA5F0B /* RainbowSixSiegeGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowSixSiegeGuideUITests.swift; sourceTree = "<group>"; };
+		6A14869A1EB4505A00AA5F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A1486A61EB451D700AA5F0B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		6A1486A71EB451D700AA5F0B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		6A1486A81EB451D700AA5F0B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		6A1486A91EB451D700AA5F0B /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		6A1486AE1EB45F4500AA5F0B /* RainbowSixSiegeGuide-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RainbowSixSiegeGuide-Bridging-Header.h"; sourceTree = "<group>"; };
+		6A1486AF1EB45F4600AA5F0B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6A1486B01EB45F4600AA5F0B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6A6BC39B1EBD742C00ED0D32 /* DisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
+		6AF54F3E1EC6B7AE00EB4AD5 /* WebviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebviewViewController.swift; sourceTree = "<group>"; };
+		6BD21A4CF87CFE280A369AC8 /* Pods_RainbowSixSiegeGuide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainbowSixSiegeGuide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		754841CBB400677C661358FF /* Pods-RainbowSixSiegeGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainbowSixSiegeGuide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainbowSixSiegeGuide/Pods-RainbowSixSiegeGuide.debug.xcconfig"; sourceTree = "<group>"; };
+		809834F0BAD9760C32447047 /* Pods-RainbowSixSiegeGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainbowSixSiegeGuide.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainbowSixSiegeGuide/Pods-RainbowSixSiegeGuide.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A1486721EB4505A00AA5F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A1486AD1EB451D700AA5F0B /* FBSDKShareKit.framework in Frameworks */,
+				6A1486AA1EB451D700AA5F0B /* Bolts.framework in Frameworks */,
+				6A1486AB1EB451D700AA5F0B /* FBSDKCoreKit.framework in Frameworks */,
+				6A1486AC1EB451D700AA5F0B /* FBSDKLoginKit.framework in Frameworks */,
+				24C463EF480398B5245CDE2F /* Pods_RainbowSixSiegeGuide.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A1486861EB4505A00AA5F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A1486911EB4505A00AA5F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B6A7232EDE0DCF808DECD3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				754841CBB400677C661358FF /* Pods-RainbowSixSiegeGuide.debug.xcconfig */,
+				809834F0BAD9760C32447047 /* Pods-RainbowSixSiegeGuide.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A14866C1EB4505A00AA5F0B = {
+			isa = PBXGroup;
+			children = (
+				6A1486AF1EB45F4600AA5F0B /* ViewController.h */,
+				6A1486B01EB45F4600AA5F0B /* ViewController.m */,
+				6A1486771EB4505A00AA5F0B /* RainbowSixSiegeGuide */,
+				6A14868C1EB4505A00AA5F0B /* RainbowSixSiegeGuideTests */,
+				6A1486971EB4505A00AA5F0B /* RainbowSixSiegeGuideUITests */,
+				6A1486761EB4505A00AA5F0B /* Products */,
+				0B6A7232EDE0DCF808DECD3A /* Pods */,
+				939714E83F66F1F415C5F827 /* Frameworks */,
+				6A1486AE1EB45F4500AA5F0B /* RainbowSixSiegeGuide-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		6A1486761EB4505A00AA5F0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A1486751EB4505A00AA5F0B /* RainbowSixSiegeGuide.app */,
+				6A1486891EB4505A00AA5F0B /* RainbowSixSiegeGuideTests.xctest */,
+				6A1486941EB4505A00AA5F0B /* RainbowSixSiegeGuideUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A1486771EB4505A00AA5F0B /* RainbowSixSiegeGuide */ = {
+			isa = PBXGroup;
+			children = (
+				4E014A201ED3508E00CB9197 /* FormMapsTableViewCell.swift */,
+				6A1486781EB4505A00AA5F0B /* AppDelegate.swift */,
+				6A14867A1EB4505A00AA5F0B /* ViewController.swift */,
+				6A6BC39B1EBD742C00ED0D32 /* DisplayViewController.swift */,
+				4E014A141ED341BD00CB9197 /* MapsTableViewController.swift */,
+				6A14867C1EB4505A00AA5F0B /* Main.storyboard */,
+				4EC30E2A1EE04DD30017F1B3 /* OperatorViewController.swift */,
+				4EC30E241EE033D20017F1B3 /* MapdetailViewController.swift */,
+				4E9AF0FF1EDAFBB40008F387 /* PopUpViewController.swift */,
+				4EF3E4E0200ED436001E6F40 /* GoogleService-Info.plist */,
+				4ED94ACE200E3CEC00D683D3 /* button-19.mp3 */,
+				4EE7493B1EBDFFF9001F214C /* Cell.swift */,
+				6A14867F1EB4505A00AA5F0B /* Assets.xcassets */,
+				6A1486811EB4505A00AA5F0B /* LaunchScreen.storyboard */,
+				6A1486841EB4505A00AA5F0B /* Info.plist */,
+				6A1486A61EB451D700AA5F0B /* Bolts.framework */,
+				6A1486A71EB451D700AA5F0B /* FBSDKCoreKit.framework */,
+				6A1486A81EB451D700AA5F0B /* FBSDKLoginKit.framework */,
+				6A1486A91EB451D700AA5F0B /* FBSDKShareKit.framework */,
+				6AF54F3E1EC6B7AE00EB4AD5 /* WebviewViewController.swift */,
+				4EC30E301EE070880017F1B3 /* OPTableViewCell.swift */,
+				4EE91BAF1EEAD3470062EDDF /* ReminderViewController.swift */,
+				4EE91BB31EEAEABE0062EDDF /* AddViewController.swift */,
+			);
+			path = RainbowSixSiegeGuide;
+			sourceTree = "<group>";
+		};
+		6A14868C1EB4505A00AA5F0B /* RainbowSixSiegeGuideTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A14868D1EB4505A00AA5F0B /* RainbowSixSiegeGuideTests.swift */,
+				6A14868F1EB4505A00AA5F0B /* Info.plist */,
+			);
+			path = RainbowSixSiegeGuideTests;
+			sourceTree = "<group>";
+		};
+		6A1486971EB4505A00AA5F0B /* RainbowSixSiegeGuideUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A1486981EB4505A00AA5F0B /* RainbowSixSiegeGuideUITests.swift */,
+				6A14869A1EB4505A00AA5F0B /* Info.plist */,
+			);
+			path = RainbowSixSiegeGuideUITests;
+			sourceTree = "<group>";
+		};
+		939714E83F66F1F415C5F827 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BD21A4CF87CFE280A369AC8 /* Pods_RainbowSixSiegeGuide.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A1486741EB4505A00AA5F0B /* RainbowSixSiegeGuide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A14869D1EB4505A00AA5F0B /* Build configuration list for PBXNativeTarget "RainbowSixSiegeGuide" */;
+			buildPhases = (
+				572BB475F142400C1A95485C /* [CP] Check Pods Manifest.lock */,
+				6A1486711EB4505A00AA5F0B /* Sources */,
+				6A1486721EB4505A00AA5F0B /* Frameworks */,
+				6A1486731EB4505A00AA5F0B /* Resources */,
+				21B63127B05C7A5D9AB115F6 /* [CP] Embed Pods Frameworks */,
+				87779CA70E5FF6D6642EFF94 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RainbowSixSiegeGuide;
+			productName = RainbowSixSiegeGuide;
+			productReference = 6A1486751EB4505A00AA5F0B /* RainbowSixSiegeGuide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A1486881EB4505A00AA5F0B /* RainbowSixSiegeGuideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A1486A01EB4505A00AA5F0B /* Build configuration list for PBXNativeTarget "RainbowSixSiegeGuideTests" */;
+			buildPhases = (
+				6A1486851EB4505A00AA5F0B /* Sources */,
+				6A1486861EB4505A00AA5F0B /* Frameworks */,
+				6A1486871EB4505A00AA5F0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A14868B1EB4505A00AA5F0B /* PBXTargetDependency */,
+			);
+			name = RainbowSixSiegeGuideTests;
+			productName = RainbowSixSiegeGuideTests;
+			productReference = 6A1486891EB4505A00AA5F0B /* RainbowSixSiegeGuideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6A1486931EB4505A00AA5F0B /* RainbowSixSiegeGuideUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A1486A31EB4505A00AA5F0B /* Build configuration list for PBXNativeTarget "RainbowSixSiegeGuideUITests" */;
+			buildPhases = (
+				6A1486901EB4505A00AA5F0B /* Sources */,
+				6A1486911EB4505A00AA5F0B /* Frameworks */,
+				6A1486921EB4505A00AA5F0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A1486961EB4505A00AA5F0B /* PBXTargetDependency */,
+			);
+			name = RainbowSixSiegeGuideUITests;
+			productName = RainbowSixSiegeGuideUITests;
+			productReference = 6A1486941EB4505A00AA5F0B /* RainbowSixSiegeGuideUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A14866D1EB4505A00AA5F0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = iosdev;
+				TargetAttributes = {
+					6A1486741EB4505A00AA5F0B = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					6A1486881EB4505A00AA5F0B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6A1486741EB4505A00AA5F0B;
+					};
+					6A1486931EB4505A00AA5F0B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6A1486741EB4505A00AA5F0B;
+					};
+				};
+			};
+			buildConfigurationList = 6A1486701EB4505A00AA5F0B /* Build configuration list for PBXProject "RainbowSixSiegeGuide" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A14866C1EB4505A00AA5F0B;
+			productRefGroup = 6A1486761EB4505A00AA5F0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A1486741EB4505A00AA5F0B /* RainbowSixSiegeGuide */,
+				6A1486881EB4505A00AA5F0B /* RainbowSixSiegeGuideTests */,
+				6A1486931EB4505A00AA5F0B /* RainbowSixSiegeGuideUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A1486731EB4505A00AA5F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A1486831EB4505A00AA5F0B /* LaunchScreen.storyboard in Resources */,
+				6A1486801EB4505A00AA5F0B /* Assets.xcassets in Resources */,
+				4EF3E4E1200ED436001E6F40 /* GoogleService-Info.plist in Resources */,
+				4ED94ACF200E3CEC00D683D3 /* button-19.mp3 in Resources */,
+				6A14867E1EB4505A00AA5F0B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A1486871EB4505A00AA5F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF3E4E2200ED436001E6F40 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A1486921EB4505A00AA5F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF3E4E3200ED436001E6F40 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21B63127B05C7A5D9AB115F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RainbowSixSiegeGuide/Pods-RainbowSixSiegeGuide-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/PermissionScope/PermissionScope.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PermissionScope.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainbowSixSiegeGuide/Pods-RainbowSixSiegeGuide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		572BB475F142400C1A95485C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RainbowSixSiegeGuide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87779CA70E5FF6D6642EFF94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainbowSixSiegeGuide/Pods-RainbowSixSiegeGuide-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A1486711EB4505A00AA5F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC30E251EE033D20017F1B3 /* MapdetailViewController.swift in Sources */,
+				6A1486B11EB45F4600AA5F0B /* ViewController.m in Sources */,
+				4EE91BB41EEAEABE0062EDDF /* AddViewController.swift in Sources */,
+				4EC30E2B1EE04DD30017F1B3 /* OperatorViewController.swift in Sources */,
+				6A14867B1EB4505A00AA5F0B /* ViewController.swift in Sources */,
+				4EE91BB01EEAD3470062EDDF /* ReminderViewController.swift in Sources */,
+				4EE7493C1EBDFFF9001F214C /* Cell.swift in Sources */,
+				4E014A151ED341BD00CB9197 /* MapsTableViewController.swift in Sources */,
+				6A1486791EB4505A00AA5F0B /* AppDelegate.swift in Sources */,
+				6AF54F3F1EC6B7AE00EB4AD5 /* WebviewViewController.swift in Sources */,
+				4E014A211ED3508E00CB9197 /* FormMapsTableViewCell.swift in Sources */,
+				4E9AF1001EDAFBB40008F387 /* PopUpViewController.swift in Sources */,
+				4EC30E311EE070880017F1B3 /* OPTableViewCell.swift in Sources */,
+				6A6BC39C1EBD742C00ED0D32 /* DisplayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A1486851EB4505A00AA5F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EABBE50200EF7F8006CF1A8 /* ViewController.swift in Sources */,
+				6A14868E1EB4505A00AA5F0B /* RainbowSixSiegeGuideTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A1486901EB4505A00AA5F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EABBE51200EF7FA006CF1A8 /* ViewController.swift in Sources */,
+				6A1486991EB4505A00AA5F0B /* RainbowSixSiegeGuideUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A14868B1EB4505A00AA5F0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A1486741EB4505A00AA5F0B /* RainbowSixSiegeGuide */;
+			targetProxy = 6A14868A1EB4505A00AA5F0B /* PBXContainerItemProxy */;
+		};
+		6A1486961EB4505A00AA5F0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A1486741EB4505A00AA5F0B /* RainbowSixSiegeGuide */;
+			targetProxy = 6A1486951EB4505A00AA5F0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A14867C1EB4505A00AA5F0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A14867D1EB4505A00AA5F0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A1486811EB4505A00AA5F0B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A1486821EB4505A00AA5F0B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A14869B1EB4505A00AA5F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A14869C1EB4505A00AA5F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A14869E1EB4505A00AA5F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 754841CBB400677C661358FF /* Pods-RainbowSixSiegeGuide.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RainbowSixSiegeGuide",
+				);
+				INFOPLIST_FILE = RainbowSixSiegeGuide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = umn.RainbowSixSiegeGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RainbowSixSiegeGuide-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6A14869F1EB4505A00AA5F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 809834F0BAD9760C32447047 /* Pods-RainbowSixSiegeGuide.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RainbowSixSiegeGuide",
+				);
+				INFOPLIST_FILE = RainbowSixSiegeGuide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = umn.RainbowSixSiegeGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RainbowSixSiegeGuide-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6A1486A11EB4505A00AA5F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RainbowSixSiegeGuideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = umn.RainbowSixSiegeGuideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RainbowSixSiegeGuide.app/RainbowSixSiegeGuide";
+			};
+			name = Debug;
+		};
+		6A1486A21EB4505A00AA5F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RainbowSixSiegeGuideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = umn.RainbowSixSiegeGuideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RainbowSixSiegeGuide.app/RainbowSixSiegeGuide";
+			};
+			name = Release;
+		};
+		6A1486A41EB4505A00AA5F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RainbowSixSiegeGuideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = umn.RainbowSixSiegeGuideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RainbowSixSiegeGuide;
+			};
+			name = Debug;
+		};
+		6A1486A51EB4505A00AA5F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RainbowSixSiegeGuideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = umn.RainbowSixSiegeGuideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RainbowSixSiegeGuide;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A1486701EB4505A00AA5F0B /* Build configuration list for PBXProject "RainbowSixSiegeGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A14869B1EB4505A00AA5F0B /* Debug */,
+				6A14869C1EB4505A00AA5F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A14869D1EB4505A00AA5F0B /* Build configuration list for PBXNativeTarget "RainbowSixSiegeGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A14869E1EB4505A00AA5F0B /* Debug */,
+				6A14869F1EB4505A00AA5F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A1486A01EB4505A00AA5F0B /* Build configuration list for PBXNativeTarget "RainbowSixSiegeGuideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A1486A11EB4505A00AA5F0B /* Debug */,
+				6A1486A21EB4505A00AA5F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A1486A31EB4505A00AA5F0B /* Build configuration list for PBXNativeTarget "RainbowSixSiegeGuideUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A1486A41EB4505A00AA5F0B /* Debug */,
+				6A1486A51EB4505A00AA5F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A14866D1EB4505A00AA5F0B /* Project object */;
+}
