@@ -17,7 +17,7 @@ import FacebookShare
 class DisplayViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,FBAdViewDelegate{
     var player:AVAudioPlayer = AVAudioPlayer()
     @IBOutlet weak var collectionView: UICollectionView!
-    var menu = ["Army.jpg","Maps.jpg","r6.jpg","Reminder.jpg","About.jpg","logout.jpg","Ubisoft.png","share.png"]
+    var menu = ["Army.jpg","Maps.jpg","r6.jpg","Reminder.jpg","About.jpg","logout.jpg","Ubisoft.png","share.png","face.png"]
     
     
     
@@ -173,7 +173,12 @@ class DisplayViewController: UIViewController,UICollectionViewDataSource,UIColle
             let sharedialog = FBSDKShareDialog()
             sharedialog.mode = .shareSheet
             FBSDKShareDialog.show(from: self, with: content, delegate: nil)
-            
+        
+        case 8  :
+            self.ButtonMusic()
+            SVProgressHUD.show(withStatus: "Wait For it")
+            performSegue(withIdentifier: "ml", sender: self)
+            SVProgressHUD.dismiss(withDelay: 1)
             default:
             break
         }

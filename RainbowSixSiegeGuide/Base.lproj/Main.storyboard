@@ -217,6 +217,7 @@
                         <segue destination="Moj-jS-0bR" kind="show" identifier="d" id="HsS-FR-LMw"/>
                         <segue destination="Okf-O0-iuk" kind="show" identifier="info" id="Udo-fC-Xd1"/>
                         <segue destination="P5z-SX-oMW" kind="show" identifier="ign" id="4XX-hr-uDE"/>
+                        <segue destination="61Z-Pj-5Ud" kind="show" identifier="ml" id="19K-eU-Kxa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFD-8b-Wvh" userLabel="First Responder" sceneMemberID="firstResponder"/>
