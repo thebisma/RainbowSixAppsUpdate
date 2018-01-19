@@ -101,6 +101,11 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzc-eu-G8i">
                                 <rect key="frame" x="176" y="116" width="22" height="22"/>
+                                <color key="tintColor" red="0.83743780850000005" green="0.1317064084" blue="0.078554071670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.83743780850000005" green="0.13170640840802608" blue="0.078554071673286513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.83743780850000005" green="0.1317064084" blue="0.078554071670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="Addbutton:" destination="P5z-SX-oMW" eventType="touchUpInside" id="fKp-Sv-Hhl"/>
                                 </connections>
@@ -113,7 +118,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.3844009274675344" green="0.5066045187050815" blue="0.83743780850000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.60361394115155753" green="0.63761526618580655" blue="0.83743780850000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QTO-yu-oAi" firstAttribute="bottom" secondItem="CvD-Eu-d0b" secondAttribute="top" id="6XN-OL-kxu"/>
                             <constraint firstItem="kzc-eu-G8i" firstAttribute="top" secondItem="hQm-zH-Ime" secondAttribute="bottom" constant="38" id="Coo-iT-MRN"/>

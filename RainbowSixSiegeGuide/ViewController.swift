@@ -59,6 +59,8 @@ let pscope = PermissionScope()
         
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!){
         print("login")
+      
+        
         let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
         
         Auth.auth().signIn(with: credential) { (user, error) in
@@ -75,13 +77,8 @@ let pscope = PermissionScope()
         
         {
                let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-            
-            
-            
             print(error.localizedDescription)
-            
         }
-      
         else
         {
      FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
