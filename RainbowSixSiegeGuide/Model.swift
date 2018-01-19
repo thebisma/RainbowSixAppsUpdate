@@ -9,11 +9,15 @@
 import Foundation
 import RealmSwift
 
-class Todoes: Object {
+var todoArray: [Todoes] = []
+class Todoes{
     
-    dynamic var todo = ""
-    dynamic var dateandtime = ""
-    
-    
+    var todo = ""
+    init(){
+        
+    }
+    init(todo: String){
+        self.todo = todo
+    }
     
 }

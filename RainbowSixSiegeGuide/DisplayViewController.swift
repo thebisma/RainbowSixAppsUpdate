@@ -152,7 +152,11 @@ class DisplayViewController: UIViewController,UICollectionViewDataSource,UIColle
             self.view.addSubview(popup.view)
             popup.didMove(toParentViewController: self)
             
-
+        case 6 :
+            self.ButtonMusic()
+            SVProgressHUD.show(withStatus: "Wait For it")
+            performSegue(withIdentifier: "ign", sender: self)
+            SVProgressHUD.dismiss(withDelay: 1)
             
         default:
             break
