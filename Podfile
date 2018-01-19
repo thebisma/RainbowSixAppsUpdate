@@ -3,6 +3,7 @@ platform :ios, '9.0'
 
 target 'RainbowSixSiegeGuide' do
 use_frameworks!
+pod 'RealmSwift'
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
 pod 'FacebookCore'

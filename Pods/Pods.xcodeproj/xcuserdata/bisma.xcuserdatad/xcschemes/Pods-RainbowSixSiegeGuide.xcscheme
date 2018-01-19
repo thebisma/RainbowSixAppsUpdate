@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F9A7E03C6217B5FE02C5F8AED6052270"
+               BlueprintIdentifier = "49704B1F452BCD0B93B562AC1B2C6B0A"
                BuildableName = "Pods_RainbowSixSiegeGuide.framework"
                BlueprintName = "Pods-RainbowSixSiegeGuide"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F9A7E03C6217B5FE02C5F8AED6052270"
+            BlueprintIdentifier = "49704B1F452BCD0B93B562AC1B2C6B0A"
             BuildableName = "Pods_RainbowSixSiegeGuide.framework"
             BlueprintName = "Pods-RainbowSixSiegeGuide"
             ReferencedContainer = "container:Pods.xcodeproj">

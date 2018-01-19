@@ -16,7 +16,7 @@ import AVFoundation
 class DisplayViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,FBAdViewDelegate{
     var player:AVAudioPlayer = AVAudioPlayer()
     @IBOutlet weak var collectionView: UICollectionView!
-    var menu = ["Army.jpg","Maps.jpg","r6.jpg","Reminder.jpg","About.jpg","logout.jpg"]
+    var menu = ["Army.jpg","Maps.jpg","r6.jpg","Reminder.jpg","About.jpg","logout.jpg","Ubisoft.png"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
