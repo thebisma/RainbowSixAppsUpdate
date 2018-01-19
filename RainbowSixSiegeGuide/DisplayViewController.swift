@@ -12,15 +12,23 @@ import FBAudienceNetwork
 import FBSDKShareKit
 import FBSDKLoginKit
 import AVFoundation
+import FacebookShare
 
 class DisplayViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,FBAdViewDelegate{
     var player:AVAudioPlayer = AVAudioPlayer()
     @IBOutlet weak var collectionView: UICollectionView!
-    var menu = ["Army.jpg","Maps.jpg","r6.jpg","Reminder.jpg","About.jpg","logout.jpg","Ubisoft.png"]
+    var menu = ["Army.jpg","Maps.jpg","r6.jpg","Reminder.jpg","About.jpg","logout.jpg","Ubisoft.png","share.png"]
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /*let content:FBSDKShareLinkContent = FBSDKShareLinkContent()
+        content.contentURL = (URL(string: "https://developers.facebook.com"))
+       let sharedialog = FBSDKShareDialog()
+        sharedialog.mode = .shareSheet
+        FBSDKShareDialog.show(from: self, with: content, delegate: nil)*/
         //fbAd
     let adview = FBAdView(placementID: "1017748905026896_1032649793536807", adSize: kFBAdSize320x50, rootViewController: self)
         adview.frame=CGRect(x: 28, y: 80, width:980, height: 70)
@@ -157,8 +165,16 @@ class DisplayViewController: UIViewController,UICollectionViewDataSource,UIColle
             SVProgressHUD.show(withStatus: "Wait For it")
             performSegue(withIdentifier: "ign", sender: self)
             SVProgressHUD.dismiss(withDelay: 1)
+         
+        case 7 :
+            self.ButtonMusic()
+            let content:FBSDKShareLinkContent = FBSDKShareLinkContent()
+            content.contentURL = (URL(string: "https://rainbow6.ubisoft.com/siege/en-us/home/"))
+            let sharedialog = FBSDKShareDialog()
+            sharedialog.mode = .shareSheet
+            FBSDKShareDialog.show(from: self, with: content, delegate: nil)
             
-        default:
+            default:
             break
         }
         

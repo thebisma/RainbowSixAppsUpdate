@@ -5,7 +5,7 @@
 //  Created by iosdev on 4/29/17.
 //  Copyright © 2017 iosdev. All rights reserved.
 //
-
+import RealmSwift
 import UIKit
 import FBSDKCoreKit
 import FBSDKShareKit

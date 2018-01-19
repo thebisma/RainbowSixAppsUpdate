@@ -12,11 +12,9 @@ class IGNListViewController: UIViewController,UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var ignTableView: UITableView!
     
-    
-    @IBOutlet weak var InputTextField: UITextField!
-    
-    
-    //var todoArray = List<Todoes>()
+    @IBOutlet weak var inputTextField: UITextField!
+
+    var todoArray = List<Todoes>()
     var realm: Realm!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,7 +24,7 @@ class IGNListViewController: UIViewController,UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let mycell = ignTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! BismaTableViewCell
         let todosrealm = todoArray[indexPath.row]
-        mycell.textLabel?.text = todosrealm.todo
+        mycell.ignLabel?.text = todosrealm.todo
         //mycell.datetime?.text = todosrealm.dateandtime
         return mycell
     }
@@ -42,7 +40,6 @@ class IGNListViewController: UIViewController,UITableViewDelegate, UITableViewDa
                 let list = self.todoArray[indexPath.row]
                 self.realm.delete(list)
             }
-    
                       self.todoArray.remove(at: indexPath.row)
                        tableView.reloadData()
                        self.prepareTable()
@@ -53,16 +50,15 @@ class IGNListViewController: UIViewController,UITableViewDelegate, UITableViewDa
     
     
     func prepareTable(){
-        if todoArray.count < 1 {
-            //noTodosLabel.isHidden = false
-            ignTableView.isHidden = true
+        if todoArray.count < 0
+        {
+            ignTableView.isHidden = false
         }else{
-            ignTableView.isHidden = true
+            ignTableView.isHidden = false
         }
     }
     
-    
-    /*func loaddatarealm(){
+    func loaddatarealm(){
         self.realm = try! Realm()
         let lists = realm.objects(Todoes.self)
         if self.todoArray.realm == nil, lists.count > 0 {
@@ -72,9 +68,10 @@ class IGNListViewController: UIViewController,UITableViewDelegate, UITableViewDa
         }
     }
     
-    */
+    
     override func viewDidAppear(_ animated: Bool) {
-        ignTableView.reloadData()
+      loaddatarealm()
+       prepareTable()
     }
  
     func updatedata(todoe: Todoes){
@@ -84,27 +81,41 @@ class IGNListViewController: UIViewController,UITableViewDelegate, UITableViewDa
             realm.add(todoe)
         }
         ignTableView.reloadData()
+        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let realm = try! Realm()
+        let todoe = Todoes()
+        try! realm.write{
+            todoArray.insert(todoe, at: todoArray.count)
+            realm.add(todoe)
+        }
+        ignTableView.reloadData()
+        prepareTable()
+        loaddatarealm()
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    @IBAction func Addbutton(_ sender: Any) {
+        
+        let temptodo = Todoes()
+        temptodo.todo = (inputTextField.text!)
+        inputTextField.text = ""
+        self.view.endEditing(true)
+        tabBarController?.selectedIndex = 0
+        let realm = try! Realm()
+        //let todoe = Todoes()
+        try! realm.write{
+            todoArray.insert(temptodo, at: todoArray.count)
+            realm.add(temptodo)
+            loaddatarealm()
+            prepareTable()
+            ignTableView.reloadData()
+        }
     }
-    
-    @IBAction func AddButton(_ sender: Any) {
-     let temptodo = Todoes()
-        temptodo.todo = (InputTextField.text!)
-     InputTextField.text = ""
-     self.view.endEditing(true)
-     tabBarController?.selectedIndex = 0
-    }
-    
     
   
     
